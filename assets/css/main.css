@@ -43,6 +43,10 @@
 
 /* general */
 @media screen {
+	#preloader {
+		background-color: white;
+		z-index: 1000000;
+	}
 	body {
 		font-family: kalam, cursive, serif !important;
 		color: rgb(100, 100, 100);

@@ -67,7 +67,7 @@ nav.addEventListener("click", (e) => {
 /* Preloader */
 const preloader = document.querySelector("#preloader");
 if (preloader) {
-	window.addEventListener("DOMContentLoaded", () => {
+	window.addEventListener("load", () => {
 		preloader.remove();
 	});
 }

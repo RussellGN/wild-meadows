@@ -44,7 +44,39 @@
 				</button>
 				<a href="./index.html">Home</a>
 				<a href="./index.html#about">About</a>
-				<a href="./index.html#contact">Get In Touch</a>
+				<a href="./index.html#what-we-do">What We Do</a>
+				<a href="./index.html#contact">Contact</a>
+			</div>
+
+			<div
+				class="modal fade"
+				id="modalId"
+				tabindex="-1"
+				data-bs-keyboard="false"
+				role="dialog"
+				aria-labelledby="modalTitleId"
+				aria-hidden="true"
+			>
+				<div
+					class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+					role="document"
+				>
+					<div class="modal-content p-3 p-md-4 c-rounded-2">
+						<div class="modal-header d-flex justify-content-center">
+							<h5 class="modal-title" id="modalTitleId">Chilli Challenge</h5>
+							<button
+								type="button"
+								class="btn-close ms-2"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body text-center">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro
+							quia quidem! Reiciendis ducimus impedit aperiam ab corporis.
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="preloader">
@@ -70,7 +102,8 @@
 					<nav class="d-none d-lg-flex align-items-center">
 						<a href="./index.html">Home</a>
 						<a href="./index.html#about">About</a>
-						<a href="./index.html#contact">Get In Touch</a>
+						<a href="./index.html#what-we-do">What We Do</a>
+						<a href="./index.html#contact">Contact</a>
 					</nav>
 				</div>
 			</div>
@@ -86,15 +119,30 @@
 					<img src="./assets/images/branch.svg" class="branch-2" alt="branch graphic" />
 				</div>
 
-				<p class="mx-auto paragraph-max py-lg-2 text-center">
-					Lorem ipsum dolor sit amet consecte adipisic elit. Tempore possimus facilis
-					Laudantium expeda sapiente
-					<br />
-					exercitationem ab.
-				</p>
+				<div class="mx-auto paragraph-max py-lg-2 text-center">
+					Throughout the year, we grow and supply a wide range of fruit and vegetables
+					including:
+					<span class="text-primary"
+						>Cabbage ,Collard greens ,Carrots ,Beets and many more…
+					</span>
+				</div>
 
 				<div class="masonry my-5 c-rounded-2 overflow-hidden">
-					<div class="masonry-item masonry1 border">
+					<div class="masonry-item masonry1 border-light border">
+						<div
+							class="h-100 w-100 bg-light d-flex align-items-center justify-content-center"
+						>
+							<p class="m-0 p-2 p-lg-4 text-center">
+								Here at Wild Meadows, we are rooted in tradition. We also grow and
+								supply a wide range of traditional vegetables including:
+								<span class="text-primary">
+									Mutsine, Mowa, Munyevhe and many more…
+								</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="masonry-item masonry2 border">
 						<img src="./assets/images/fruit-veg1.jpeg" alt="fruit and veg" />
 					</div>
 
@@ -102,35 +150,45 @@
 						<img src="./assets/images/fruit-veg7.jpg" alt="fruit and veg" />
 					</div>
 
-					<div class="masonry-item masonry3 border-light border">
-						<div
-							class="h-100 w-100 bg-light d-flex align-items-center justify-content-center"
-						>
-							<p class="m-0 p-3 p-lg-4 text-center">
-								Lorem ipsum dolor sit <br />
-								amet blanditiis <br />
-								quisquam
-							</p>
-						</div>
-					</div>
-
 					<div class="masonry-item masonry4 border">
 						<img src="./assets/images/fruit-veg4.jpg" alt="fruit and veg" />
 					</div>
 
-					<div class="masonry-item masonry1 border border-light">
+					<div class="masonry-item masonry4 border border-light">
 						<div
 							class="h-100 w-100 bg-light d-flex align-items-center justify-content-center"
 						>
 							<p class="m-0 p-3 p-lg-4 text-center">
-								amet blanditiis <br />
-								quisquam
+								If you want to add some heat to your vegetables, we grow a variety
+								of spicy chillies.
 							</p>
 						</div>
 					</div>
 
 					<div class="masonry-item masonry2 border">
 						<img src="./assets/images/fruit-veg10.webp" alt="fruit and veg" />
+					</div>
+
+					<div class="masonry-item masonry2 border">
+						<img src="./assets/images/fruit-veg6.jpg" alt="fruit and veg" />
+					</div>
+
+					<div class="masonry-item masonry4 border border-light text-white">
+						<div
+							class="h-100 w-100 bg-primary d-flex align-items-center justify-content-center"
+						>
+							<p class="m-0 p-5 text-center">
+								<button
+									type="button"
+									class="btn text-white text-underline btn-lg"
+									data-bs-toggle="modal"
+									data-bs-target="#modalId"
+								>
+									Take and complete our chilli challenge to win <br />
+									complementary jar of chilli sauce.
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
 

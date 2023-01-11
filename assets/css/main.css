@@ -1,7 +1,33 @@
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background-color: #f8f9fa;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgb(126, 217, 87);
+	border: solid #f8f9fa;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
 /* resets */
 @media screen {
 	.btn {
 		box-shadow: none !important;
+	}
+	.border-primary {
+		border-color: rgb(126, 217, 87) !important;
+	}
+	.border-primary-light {
+		border-color: rgba(126, 217, 87, 0.3) !important;
+	}
+	.bg-primary-light {
+		background-color: rgba(126, 217, 87, 0.3) !important;
+	}
+	.bg-primary {
+		background-color: rgb(126, 217, 87) !important;
 	}
 	.text-primary {
 		color: rgb(126, 217, 87) !important;
@@ -9,6 +35,9 @@
 }
 /* utils */
 @media screen {
+	.text-underline {
+		text-decoration: underline !important;
+	}
 	.paragraph-max {
 		max-width: 550px;
 	}
@@ -147,7 +176,8 @@
 		width: 130%;
 		height: 96%;
 		/* background: #68a4c4; */
-		background: rgb(126, 217, 87);
+		background: rgb(175, 198, 165);
+		/* background: rgb(126, 217, 87); */
 		opacity: 0.3;
 		z-index: 0;
 		border-radius: 0 0 50% 50%;
@@ -174,7 +204,7 @@
 	.feature {
 		position: relative;
 		margin: 0 auto;
-		margin-bottom: 280px;
+		margin-bottom: 300px;
 		max-width: 350px;
 	}
 	.feature-image {
@@ -189,6 +219,7 @@
 		right: 0;
 		width: fit-content;
 	}
+	.feature-content .paragraph,
 	.feature-content p {
 		width: 230px;
 	}
@@ -211,6 +242,10 @@
 	.feature-right .feature-content {
 		left: 0;
 		right: unset;
+	}
+	.feature-content .paragraph,
+	.feature-right .feature-content p {
+		text-align: left;
 	}
 	.feature-right .feature-heading {
 		text-align: left;
@@ -237,6 +272,7 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
+		.feature-content .paragraph,
 		.feature-content p {
 			width: 400px;
 			margin: 0;
@@ -325,8 +361,8 @@
 	.map {
 		overflow: hidden;
 		border-radius: 100%;
-		width: 10rem;
-		height: 10rem;
+		width: 15rem;
+		height: 15rem;
 	}
 	@media screen and (min-width: 900px) {
 		.map {
@@ -382,4 +418,19 @@
 		width: 100%;
 		height: 100%;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.farm-details {
+		top: 15vh;
+	}
+}
+
+.more-navs {
+	display: none;
+}
+.more-navs.show-more {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

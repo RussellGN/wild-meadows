@@ -101,7 +101,7 @@ window.addEventListener("load", navbarlinksActive);
 document.addEventListener("scroll", navbarlinksActive);
 
 /* Scroll with ofset on page load with hash links in the url */
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 	if (window.location.hash) {
 		if (document.querySelector(window.location.hash)) {
 			scrollto(window.location.hash);

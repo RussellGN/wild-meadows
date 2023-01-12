@@ -37,14 +37,16 @@ function scrollto(el) {
 /* Fires the scrollto function on click to links .scrollto */
 let selectScrollto = document.querySelectorAll(".scrollto");
 
-selectScrollto.forEach((el) =>
-	el.addEventListener("click", function (event) {
-		event.preventDefault();
-		if (document.querySelector(this.hash)) {
-			scrollto(this.hash);
-		}
-	})
-);
+if (selectScrollto) {
+	selectScrollto.forEach((el) =>
+		el.addEventListener("click", function (event) {
+			event.preventDefault();
+			if (document.querySelector(this.hash)) {
+				scrollto(this.hash);
+			}
+		})
+	);
+}
 
 // nav backdrop
 document.querySelector("#close-nav").addEventListener("click", toggleNav);
@@ -99,7 +101,7 @@ window.addEventListener("load", navbarlinksActive);
 document.addEventListener("scroll", navbarlinksActive);
 
 /* Scroll with ofset on page load with hash links in the url */
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
 	if (window.location.hash) {
 		if (document.querySelector(window.location.hash)) {
 			scrollto(window.location.hash);

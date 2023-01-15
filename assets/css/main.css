@@ -29,6 +29,9 @@
 	.bg-primary {
 		background-color: rgb(126, 217, 87) !important;
 	}
+	.bg-primary-dark {
+		background-color: rgb(139, 187, 118) !important;
+	}
 	.text-primary {
 		color: rgb(126, 217, 87) !important;
 	}
